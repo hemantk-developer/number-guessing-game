@@ -1,0 +1,51 @@
+<!doctype html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body onload="init()">
+	    <main>
+	    	<div id="welcomeScreen">
+	    		<h2>Guess The Random Number Between 1-100</h2>
+	    		<img class="image" src="welcome image.webp" alt="logo">
+	    		<section class="eventSection">
+	    			<p style="font-weight: 600; display: relative; top:10px">Select The Difficulty</p>
+	                <div class="button-wrapper">
+	                	<button onclick="easyMode()">Easy: 10 attempts</button>
+	                	<button onclick="hardMode()">Hard: 05 attempts</button>
+	                	</div>
+	                </section>    		    		
+	    </div>
+	    <!--Game area--->
+	    <div id="gameArea">
+	    	<div id="newGameButton">
+	    		<button onclick="newGameBegin()">New Game</button>
+	    	</div>
+	    	<section input>
+	    		<h3 id="textOutput">Your Guess</h3>
+	    		<input 
+	    		type="number" 
+	    		id="inputBox"
+	    		min="1"
+	    		max="100" 
+	    		placeholder="Enter Your Number" 
+	    		onchange="compareGuess()" 
+	    		/>
+	    	</section>
+
+		    	<section class="stats">
+	    		<div class="info">
+	    			<p>Number of previous attempts: <span id="attempts"> 0 </span>	</p>
+	    			
+	    		<p>Number of previous gusses: <span id="gusses"> 0 </span></p>
+				</div>
+	    	</section>    		
+	    	</div>	
+	    </div>
+	    </main>
+
+<script src="app.js"></script>
+
+	</body>
+	</html>

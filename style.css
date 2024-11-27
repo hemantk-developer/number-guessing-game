@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark: #ffaa1d;
+  --background: #ffffff;
+}
+html {
+  font-family: "Montserrate", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--dark);
+}
+
+main {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 50vh;
+  height: 80vh;
+  text-align: center;
+  background-color: var(--background);
+  border: 2px solid #003366;
+  border-width: 0.8rem;
+  border-radius: 1.2rem;
+  padding: 5rem 2rem;
+  color: #1f2933;
+}
+h2 {
+  font-size: 20px;
+  margin: 2px;
+}
+h3 {
+  font-size: 3rem;
+}
+.image {
+  width: 90%;
+  max-height: 18rem;
+  height: auto;
+  /* margin: 1rem 0 4rem 0; */
+}
+/* .button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+} */
+button {
+  width: 120px;
+  height: 50px;
+  background-color: #003366;
+  border-radius: 0.8rem;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  font-size: 10px;
+  text-align: center !important;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+}
+button:hover {
+  box-shadow: rgba(192, 200, 209, 0.3) 0px 0px 0px 3px;
+}
+button:last-child {
+  background: var(--dark);
+  margin-bottom: 0;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.info p,
+.info span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 20px;
+  text-align: left;
+}
+
+/*------game area-----------------------*/
+#gameArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#newGameButton button {
+  margin: 40 px 5px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  background: transparent;
+  margin: 10px 0;
+  padding: 2px 0;
+  width: 12rem;
+  height: 2.8rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.stats {
+  margin-bottom: 3rem;
+}
+
+/*------for responsive-----------------------*/
+
+@media (max-width: 1200px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 50vw;
+    padding: 2rem;
+  }
+}
